@@ -1,0 +1,10 @@
+version:  '3'
+services:
+  python-tcc:
+      image: python:3.8
+      volumes:
+        - "./scripts:/scripts:rw"
+      container_name:   python_tcc
+      command: "/bin/bash"
+      stdin_open: true
+      tty: true
